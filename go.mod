@@ -1,3 +1,3 @@
-module uniswap-simulator
+module github.com/numbergroup/uniswap
 
-go 1.17
+go 1.23

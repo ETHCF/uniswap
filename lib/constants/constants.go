@@ -2,7 +2,7 @@ package constants
 
 import (
 	"math/big"
-	ui "uniswap-simulator/uint256"
+	ui "github.com/numbergroup/uniswap/uint256"
 )
 
 var (

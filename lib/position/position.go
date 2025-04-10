@@ -1,9 +1,9 @@
 package position
 
 import (
-	cons "uniswap-simulator/lib/constants"
-	"uniswap-simulator/lib/fullmath"
-	ui "uniswap-simulator/uint256"
+	cons "github.com/numbergroup/uniswap/lib/constants"
+	"github.com/numbergroup/uniswap/lib/fullmath"
+	ui "github.com/numbergroup/uniswap/uint256"
 )
 
 func (i *Info) Clone() *Info {

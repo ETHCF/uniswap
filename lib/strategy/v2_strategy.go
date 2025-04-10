@@ -1,10 +1,10 @@
 package strategy
 
 import (
-	la "uniswap-simulator/lib/liquidity_amounts"
-	"uniswap-simulator/lib/pool"
-	"uniswap-simulator/lib/tickmath"
-	ui "uniswap-simulator/uint256"
+	la "github.com/numbergroup/uniswap/lib/liquidity_amounts"
+	"github.com/numbergroup/uniswap/lib/pool"
+	"github.com/numbergroup/uniswap/lib/tickmath"
+	ui "github.com/numbergroup/uniswap/uint256"
 )
 
 // V2Strategy [mintick, maxtick]

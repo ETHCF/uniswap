@@ -1,9 +1,9 @@
 package liquidity_amounts
 
 import (
-	cons "uniswap-simulator/lib/constants"
-	"uniswap-simulator/lib/fullmath"
-	ui "uniswap-simulator/uint256"
+	cons "github.com/numbergroup/uniswap/lib/constants"
+	"github.com/numbergroup/uniswap/lib/fullmath"
+	ui "github.com/numbergroup/uniswap/uint256"
 )
 
 func getLiquidityForAmount0(sqrtRatioAX96, sqrtRatioBX96, amount0 *ui.Int) *ui.Int {
