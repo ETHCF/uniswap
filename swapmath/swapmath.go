@@ -1,8 +1,8 @@
 package swapmath
 
 import (
-	fm "github.com/numbergroup/uniswap/lib/fullmath"
-	sqrtmath "github.com/numbergroup/uniswap/lib/sqrtprice_math"
+	fm "github.com/numbergroup/uniswap/fullmath"
+	sqrtmath "github.com/numbergroup/uniswap/sqrtprice_math"
 	ui "github.com/numbergroup/uniswap/uint256"
 )
 

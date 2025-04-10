@@ -2,7 +2,7 @@ package prices
 
 import (
 	"math/big"
-	"github.com/numbergroup/uniswap/lib/invariant"
+	"github.com/numbergroup/uniswap/invariant"
 	ui "github.com/numbergroup/uniswap/uint256"
 )
 

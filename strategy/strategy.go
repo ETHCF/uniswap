@@ -1,7 +1,7 @@
 package strategy
 
 import (
-	"github.com/numbergroup/uniswap/lib/pool"
+	"github.com/numbergroup/uniswap/pool"
 	ui "github.com/numbergroup/uniswap/uint256"
 )
 

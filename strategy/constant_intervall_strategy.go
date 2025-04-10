@@ -1,10 +1,10 @@
 package strategy
 
 import (
-	cons "github.com/numbergroup/uniswap/lib/constants"
-	la "github.com/numbergroup/uniswap/lib/liquidity_amounts"
-	"github.com/numbergroup/uniswap/lib/pool"
-	"github.com/numbergroup/uniswap/lib/tickmath"
+	cons "github.com/numbergroup/uniswap/constants"
+	la "github.com/numbergroup/uniswap/liquidity_amounts"
+	"github.com/numbergroup/uniswap/pool"
+	"github.com/numbergroup/uniswap/tickmath"
 	ui "github.com/numbergroup/uniswap/uint256"
 )
 

@@ -2,10 +2,10 @@ package executor
 
 import (
 	"math"
-	cons "github.com/numbergroup/uniswap/lib/constants"
-	"github.com/numbergroup/uniswap/lib/fullmath"
-	strat "github.com/numbergroup/uniswap/lib/strategy"
-	ent "github.com/numbergroup/uniswap/lib/transaction"
+	cons "github.com/numbergroup/uniswap/constants"
+	"github.com/numbergroup/uniswap/fullmath"
+	strat "github.com/numbergroup/uniswap/strategy"
+	ent "github.com/numbergroup/uniswap/transaction"
 	ui "github.com/numbergroup/uniswap/uint256"
 )
 

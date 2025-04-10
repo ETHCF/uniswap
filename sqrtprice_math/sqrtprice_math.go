@@ -1,9 +1,9 @@
 package sqrtprice_math
 
 import (
-	cons "github.com/numbergroup/uniswap/lib/constants"
-	fm "github.com/numbergroup/uniswap/lib/fullmath"
-	"github.com/numbergroup/uniswap/lib/invariant"
+	cons "github.com/numbergroup/uniswap/constants"
+	fm "github.com/numbergroup/uniswap/fullmath"
+	"github.com/numbergroup/uniswap/invariant"
 	ui "github.com/numbergroup/uniswap/uint256"
 )
 

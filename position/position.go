@@ -1,8 +1,8 @@
 package position
 
 import (
-	cons "github.com/numbergroup/uniswap/lib/constants"
-	"github.com/numbergroup/uniswap/lib/fullmath"
+	cons "github.com/numbergroup/uniswap/constants"
+	"github.com/numbergroup/uniswap/fullmath"
 	ui "github.com/numbergroup/uniswap/uint256"
 )
 

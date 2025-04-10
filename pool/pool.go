@@ -1,14 +1,14 @@
 package pool
 
 import (
-	cons "github.com/numbergroup/uniswap/lib/constants"
-	"github.com/numbergroup/uniswap/lib/fullmath"
-	"github.com/numbergroup/uniswap/lib/invariant"
-	"github.com/numbergroup/uniswap/lib/position"
-	"github.com/numbergroup/uniswap/lib/sqrtprice_math"
-	"github.com/numbergroup/uniswap/lib/swapmath"
-	td "github.com/numbergroup/uniswap/lib/tickdata"
-	"github.com/numbergroup/uniswap/lib/tickmath"
+	cons "github.com/numbergroup/uniswap/constants"
+	"github.com/numbergroup/uniswap/fullmath"
+	"github.com/numbergroup/uniswap/invariant"
+	"github.com/numbergroup/uniswap/position"
+	"github.com/numbergroup/uniswap/sqrtprice_math"
+	"github.com/numbergroup/uniswap/swapmath"
+	td "github.com/numbergroup/uniswap/tickdata"
+	"github.com/numbergroup/uniswap/tickmath"
 	ui "github.com/numbergroup/uniswap/uint256"
 )
 

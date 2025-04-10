@@ -3,8 +3,8 @@ package tickmath
 import (
 	"math"
 	"math/big"
-	cons "github.com/numbergroup/uniswap/lib/constants"
-	"github.com/numbergroup/uniswap/lib/invariant"
+	cons "github.com/numbergroup/uniswap/constants"
+	"github.com/numbergroup/uniswap/invariant"
 	ui "github.com/numbergroup/uniswap/uint256"
 )
 

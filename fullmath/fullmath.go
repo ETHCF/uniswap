@@ -1,7 +1,7 @@
 package fullmath
 
 import (
-	cons "github.com/numbergroup/uniswap/lib/constants"
+	cons "github.com/numbergroup/uniswap/constants"
 	ui "github.com/numbergroup/uniswap/uint256"
 )
 
