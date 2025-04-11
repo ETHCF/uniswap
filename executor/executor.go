@@ -1,12 +1,12 @@
 package executor
 
 import (
-	"math"
 	cons "github.com/numbergroup/uniswap/constants"
 	"github.com/numbergroup/uniswap/fullmath"
 	strat "github.com/numbergroup/uniswap/strategy"
 	ent "github.com/numbergroup/uniswap/transaction"
 	ui "github.com/numbergroup/uniswap/uint256"
+	"math"
 )
 
 type Execution struct {

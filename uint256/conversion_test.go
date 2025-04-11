@@ -163,8 +163,7 @@ func TestFormat(t *testing.T) {
 		"7feeddccbbaa99887766554433221100ffeeddccbbaa99887766554433221100",
 	}
 
-	for i := 0; i < len(testCases); i++ {
-		expected := testCases[i]
+	for _, expected := range testCases {
 		b, ok := new(big.Int).SetString(expected, 16)
 		if !ok {
 			t.Fatalf("failed to set string %s", expected)

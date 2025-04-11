@@ -1,8 +1,8 @@
 package constants
 
 import (
-	"math/big"
 	ui "github.com/numbergroup/uniswap/uint256"
+	"math/big"
 )
 
 var (

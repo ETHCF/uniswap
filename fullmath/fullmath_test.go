@@ -2,9 +2,9 @@ package fullmath
 
 import (
 	"fmt"
+	ui "github.com/numbergroup/uniswap/uint256"
 	"math/big"
 	"testing"
-	ui "github.com/numbergroup/uniswap/uint256"
 )
 
 func Test(t *testing.T) {
