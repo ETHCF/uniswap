@@ -160,12 +160,16 @@ func TestFormat(t *testing.T) {
 	testCases := []string{
 		"0",
 		"1",
-		"ffeeddccbbaa99887766554433221100ffeeddccbbaa99887766554433221100",
+		"7feeddccbbaa99887766554433221100ffeeddccbbaa99887766554433221100",
 	}
 
 	for i := 0; i < len(testCases); i++ {
 		expected := testCases[i]
-		b, _ := new(big.Int).SetString(expected, 16)
+		b, ok := new(big.Int).SetString(expected, 16)
+		if !ok {
+			t.Fatalf("failed to set string %s", expected)
+		}
+		t.Logf("sign of big int is %d", b.Sign())
 		f, o := FromBig(b)
 		if o {
 			t.Fatalf("too big test case %s", expected)

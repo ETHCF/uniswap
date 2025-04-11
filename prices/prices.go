@@ -2,6 +2,7 @@ package prices
 
 import (
 	"math/big"
+
 	"github.com/numbergroup/uniswap/invariant"
 	ui "github.com/numbergroup/uniswap/uint256"
 )
@@ -14,7 +15,7 @@ type Prices struct {
 
 func NewPrices(len int) *Prices {
 	prices := make([]*ui.Int, len)
-	for i := 0; i < len; i++ {
+	for i := range prices {
 		prices[i] = ui.NewInt(0)
 	}
 	return &Prices{prices, 0, len}

@@ -1,6 +1,8 @@
 package pool
 
 import (
+	"fmt"
+
 	cons "github.com/numbergroup/uniswap/constants"
 	"github.com/numbergroup/uniswap/fullmath"
 	"github.com/numbergroup/uniswap/invariant"
@@ -97,7 +99,7 @@ func (p *Pool) updatePosition(tickLower, tickUpper int, amount *ui.Int) (pos *po
 	}
 
 	feeGrowthInside0X128, feeGrowthInside1X128 := p.TickData.GetFeeGrowthInside(tickLower, tickUpper, p.TickCurrent, p.FeeGrowthGlobal0X128, p.FeeGrowthGlobal1X128)
-	searchString := string(tickLower) + "-" + string(tickUpper)
+	searchString := fmt.Sprintf("%x-%x", tickLower, tickUpper)
 	pos = p.Positions[searchString]
 	if pos == nil {
 		pos = position.NewPosition()
@@ -167,7 +169,7 @@ func (p *Pool) BurnStrategy(tickLower int, tickUpper int, amount *ui.Int) (*ui.I
 
 // CollectStrategy Always Collect all
 func (p *Pool) CollectStrategy(tickLower int, tickUpper int) (amount0, amount1 *ui.Int) {
-	searchString := string(tickLower) + "-" + string(tickUpper)
+	searchString := fmt.Sprintf("%x-%x", tickLower, tickUpper)
 	pos := p.Positions[searchString]
 
 	amount0 = pos.TokensOwed0.Clone()

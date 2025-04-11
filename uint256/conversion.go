@@ -140,7 +140,7 @@ func (z *Int) SetFromBig(b *big.Int) bool {
 		if overflow {
 			numWords = maxWords
 		}
-		for i := 0; i < numWords; i++ {
+		for i := range numWords {
 			if i%2 == 0 {
 				z[i/2] = uint64(words[i])
 			} else {
@@ -166,7 +166,6 @@ func (z *Int) SetFromBig(b *big.Int) bool {
 // specification of minimum digits precision, output field
 // width, space or zero padding, and '-' for left or right
 // justification.
-//
 func (z *Int) Format(s fmt.State, ch rune) {
 	z.SToBig().Format(s, ch)
 }
