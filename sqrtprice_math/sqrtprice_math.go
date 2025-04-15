@@ -19,6 +19,18 @@ func addIn256(x, y *ui.Int) *ui.Int {
 	return new(ui.Int).And(sum, cons.MaxUint256)
 }
 
+func GetAmount0DeltaNumerator(sqrtRatioAX96, sqrtRatioBX96, liquidity *ui.Int) (*ui.Int, *ui.Int) {
+	if sqrtRatioAX96.Cmp(sqrtRatioBX96) > 0 {
+		sqrtRatioAX96, sqrtRatioBX96 = sqrtRatioBX96, sqrtRatioAX96
+	}
+
+	numerator1 := new(ui.Int).Lsh(liquidity, 96)
+	numerator2 := new(ui.Int).Sub(sqrtRatioBX96, sqrtRatioAX96)
+
+	return numerator1, numerator2
+
+}
+
 func GetAmount0Delta(sqrtRatioAX96, sqrtRatioBX96, liquidity *ui.Int, roundUp bool) *ui.Int {
 	if sqrtRatioAX96.Cmp(sqrtRatioBX96) > 0 {
 		sqrtRatioAX96, sqrtRatioBX96 = sqrtRatioBX96, sqrtRatioAX96
@@ -28,7 +40,7 @@ func GetAmount0Delta(sqrtRatioAX96, sqrtRatioBX96, liquidity *ui.Int, roundUp bo
 	numerator2 := new(ui.Int).Sub(sqrtRatioBX96, sqrtRatioAX96)
 
 	if roundUp {
-		return fm.MulDivRoundingUp(fm.MulDivRoundingUp(numerator1, numerator2, sqrtRatioBX96), cons.One, sqrtRatioAX96)
+		return fm.UnsafeMath_DivRoundingUp(fm.MulDivRoundingUp(numerator1, numerator2, sqrtRatioBX96), sqrtRatioAX96)
 	}
 
 	res := fm.MulDiv(numerator1, numerator2, sqrtRatioBX96)

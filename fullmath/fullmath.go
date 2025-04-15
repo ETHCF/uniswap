@@ -31,3 +31,12 @@ func MulDiv(a, b, denominator *ui.Int) *ui.Int {
 	result := (*ui.Int)(quotient[0:4])
 	return result
 }
+
+func UnsafeMath_DivRoundingUp(x, y *ui.Int) *ui.Int {
+	z := new(ui.Int).Div(x, y)
+	if new(ui.Int).Mod(x, y).IsZero() {
+		return z
+	}
+	z.Add(z, cons.One)
+	return z
+}
