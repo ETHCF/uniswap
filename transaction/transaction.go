@@ -2,8 +2,9 @@ package transaction
 
 import (
 	"encoding/json"
-	ui "github.com/ethcf/uniswap/uint256"
 	"strconv"
+
+	ui "github.com/ethcf/uniswap/uint256"
 )
 
 type TransactionInput struct {

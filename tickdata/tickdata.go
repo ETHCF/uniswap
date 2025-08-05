@@ -2,6 +2,7 @@ package tickdata
 
 import (
 	"fmt"
+
 	cons "github.com/ethcf/uniswap/constants"
 	"github.com/ethcf/uniswap/invariant"
 	ui "github.com/ethcf/uniswap/uint256"
@@ -258,18 +259,4 @@ func (t *TickData) nextInitializedTick(tick int, lte bool) Tick {
 		index := t.binarySearch(tick)
 		return t.ticks[index+1]
 	}
-}
-
-func min(a, b int) int {
-	if a < b {
-		return a
-	}
-	return b
-}
-
-func max(a, b int) int {
-	if a > b {
-		return a
-	}
-	return b
 }
