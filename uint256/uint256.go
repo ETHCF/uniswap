@@ -145,14 +145,14 @@ func (z *Int) WriteToSlice(dest []byte) {
 
 // WriteToArray32 writes all 32 bytes of z to the destination array, including zero-bytes
 func (z *Int) WriteToArray32(dest *[32]byte) {
-	for i := 0; i < 32; i++ {
+	for i := range 32 {
 		dest[31-i] = byte(z[i/8] >> uint64(8*(i%8)))
 	}
 }
 
 // WriteToArray20 writes the last 20 bytes of z to the destination array, including zero-bytes
 func (z *Int) WriteToArray20(dest *[20]byte) {
-	for i := 0; i < 20; i++ {
+	for i := range 20 {
 		dest[19-i] = byte(z[i/8] >> uint64(8*(i%8)))
 	}
 }
