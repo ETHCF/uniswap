@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/numbergroup/uniswap/uint256"
+	"github.com/ethcf/uniswap/uint256"
 )
 
 func mustBigInt(value string) *big.Int {

@@ -3,8 +3,8 @@ package prices
 import (
 	"math/big"
 
-	"github.com/numbergroup/uniswap/invariant"
-	ui "github.com/numbergroup/uniswap/uint256"
+	"github.com/ethcf/uniswap/invariant"
+	ui "github.com/ethcf/uniswap/uint256"
 )
 
 type Prices struct {

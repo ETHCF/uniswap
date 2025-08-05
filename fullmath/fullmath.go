@@ -1,8 +1,8 @@
 package fullmath
 
 import (
-	cons "github.com/numbergroup/uniswap/constants"
-	ui "github.com/numbergroup/uniswap/uint256"
+	cons "github.com/ethcf/uniswap/constants"
+	ui "github.com/ethcf/uniswap/uint256"
 )
 
 func MulDivRoundingUp(a, b, denominator *ui.Int) *ui.Int {

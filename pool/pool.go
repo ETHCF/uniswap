@@ -3,15 +3,15 @@ package pool
 import (
 	"fmt"
 
-	cons "github.com/numbergroup/uniswap/constants"
-	"github.com/numbergroup/uniswap/fullmath"
-	"github.com/numbergroup/uniswap/invariant"
-	"github.com/numbergroup/uniswap/position"
-	"github.com/numbergroup/uniswap/sqrtprice_math"
-	"github.com/numbergroup/uniswap/swapmath"
-	td "github.com/numbergroup/uniswap/tickdata"
-	"github.com/numbergroup/uniswap/tickmath"
-	ui "github.com/numbergroup/uniswap/uint256"
+	cons "github.com/ethcf/uniswap/constants"
+	"github.com/ethcf/uniswap/fullmath"
+	"github.com/ethcf/uniswap/invariant"
+	"github.com/ethcf/uniswap/position"
+	"github.com/ethcf/uniswap/sqrtprice_math"
+	"github.com/ethcf/uniswap/swapmath"
+	td "github.com/ethcf/uniswap/tickdata"
+	"github.com/ethcf/uniswap/tickmath"
+	ui "github.com/ethcf/uniswap/uint256"
 )
 
 type StepComputations struct {

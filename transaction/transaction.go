@@ -2,7 +2,7 @@ package transaction
 
 import (
 	"encoding/json"
-	ui "github.com/numbergroup/uniswap/uint256"
+	ui "github.com/ethcf/uniswap/uint256"
 	"strconv"
 )
 

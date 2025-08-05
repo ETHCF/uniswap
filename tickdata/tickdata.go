@@ -2,9 +2,9 @@ package tickdata
 
 import (
 	"fmt"
-	cons "github.com/numbergroup/uniswap/constants"
-	"github.com/numbergroup/uniswap/invariant"
-	ui "github.com/numbergroup/uniswap/uint256"
+	cons "github.com/ethcf/uniswap/constants"
+	"github.com/ethcf/uniswap/invariant"
+	ui "github.com/ethcf/uniswap/uint256"
 )
 
 type Tick struct {

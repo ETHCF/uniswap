@@ -1,7 +1,7 @@
 package constants
 
 import (
-	ui "github.com/numbergroup/uniswap/uint256"
+	ui "github.com/ethcf/uniswap/uint256"
 	"math/big"
 )
 

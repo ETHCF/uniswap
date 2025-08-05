@@ -1,11 +1,11 @@
 package executor
 
 import (
-	cons "github.com/numbergroup/uniswap/constants"
-	"github.com/numbergroup/uniswap/fullmath"
-	strat "github.com/numbergroup/uniswap/strategy"
-	ent "github.com/numbergroup/uniswap/transaction"
-	ui "github.com/numbergroup/uniswap/uint256"
+	cons "github.com/ethcf/uniswap/constants"
+	"github.com/ethcf/uniswap/fullmath"
+	strat "github.com/ethcf/uniswap/strategy"
+	ent "github.com/ethcf/uniswap/transaction"
+	ui "github.com/ethcf/uniswap/uint256"
 	"math"
 )
 

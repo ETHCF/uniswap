@@ -1,10 +1,10 @@
 package sqrtprice_math
 
 import (
-	cons "github.com/numbergroup/uniswap/constants"
-	fm "github.com/numbergroup/uniswap/fullmath"
-	"github.com/numbergroup/uniswap/invariant"
-	ui "github.com/numbergroup/uniswap/uint256"
+	cons "github.com/ethcf/uniswap/constants"
+	fm "github.com/ethcf/uniswap/fullmath"
+	"github.com/ethcf/uniswap/invariant"
+	ui "github.com/ethcf/uniswap/uint256"
 )
 
 var MaxUint160 = new(ui.Int).Sub(new(ui.Int).Exp(ui.NewInt(2), ui.NewInt(160)), cons.One)

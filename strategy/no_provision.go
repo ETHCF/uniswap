@@ -1,8 +1,8 @@
 package strategy
 
 import (
-	"github.com/numbergroup/uniswap/pool"
-	ui "github.com/numbergroup/uniswap/uint256"
+	"github.com/ethcf/uniswap/pool"
+	ui "github.com/ethcf/uniswap/uint256"
 )
 
 // V2Strategy [mintick, maxtick]

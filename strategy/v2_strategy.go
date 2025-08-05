@@ -1,10 +1,10 @@
 package strategy
 
 import (
-	la "github.com/numbergroup/uniswap/liquidity_amounts"
-	"github.com/numbergroup/uniswap/pool"
-	"github.com/numbergroup/uniswap/tickmath"
-	ui "github.com/numbergroup/uniswap/uint256"
+	la "github.com/ethcf/uniswap/liquidity_amounts"
+	"github.com/ethcf/uniswap/pool"
+	"github.com/ethcf/uniswap/tickmath"
+	ui "github.com/ethcf/uniswap/uint256"
 )
 
 // V2Strategy [mintick, maxtick]

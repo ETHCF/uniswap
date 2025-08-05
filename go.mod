@@ -1,4 +1,4 @@
-module github.com/numbergroup/uniswap
+module github.com/ethcf/uniswap
 
 go 1.23
 
