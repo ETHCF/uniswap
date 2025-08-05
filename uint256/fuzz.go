@@ -33,7 +33,7 @@ type bigDualArgFunc func(*big.Int, *big.Int, *big.Int) *big.Int
 type opThreeArgFunc func(*Int, *Int, *Int, *Int) *Int
 type bigThreeArgFunc func(*big.Int, *big.Int, *big.Int, *big.Int) *big.Int
 
-func crash(op interface{}, msg string, args ...Int) {
+func crash(op any, msg string, args ...Int) {
 	fn := runtime.FuncForPC(reflect.ValueOf(op).Pointer())
 	fnName := fn.Name()
 	fnFile, fnLine := fn.FileLine(fn.Entry())

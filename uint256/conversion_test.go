@@ -603,13 +603,13 @@ func referenceBig(s string) *big.Int {
 }
 
 type marshalTest struct {
-	input interface{}
+	input any
 	want  string
 }
 
 type unmarshalTest struct {
 	input   string
-	want    interface{}
+	want    any
 	wantErr error // if set, decoding must fail on any platform
 }
 

@@ -132,7 +132,7 @@ func checkOverflow(b *big.Int, f *Int, overflow bool) error {
 	max := big.NewInt(0).SetBytes(hex2Bytes("ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"))
 	shouldOverflow := b.Cmp(max) > 0
 	if overflow != shouldOverflow {
-		return fmt.Errorf("Overflow should be %v, was %v\nf= %x\nb= %x\b", shouldOverflow, overflow, f, b)
+		return fmt.Errorf("Overflow should be %v, was %v\nf= %x\nb= %x", shouldOverflow, overflow, f, b)
 	}
 	return nil
 }
